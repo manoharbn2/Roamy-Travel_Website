@@ -1,0 +1,16 @@
+<div class="page-content">
+    <h1>city-details are here</h1>
+    <p>Roam around and enjoy Hurray !!!!</p>
+</div>
+
+<div class="city "*ngIf="name">
+    <hr />
+    <h2>{{ name }}</h2>
+    <h3>Places to See:</h3>
+    <ul>
+      <li *ngFor="let detail of details">{{ detail }}</li>
+    </ul>
+</div>
+
+  
+

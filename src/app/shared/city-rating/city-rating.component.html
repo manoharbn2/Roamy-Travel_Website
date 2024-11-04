@@ -1,0 +1,10 @@
+<div class="crop" [style.width.px]="starWidth" [title]="rating">
+  <div class="stars">
+    <fa-icon 
+      *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+      [icon]="faStar"
+      [ngClass]="getStarClass(i)"
+      (click)="onClick(i + 1)">
+    </fa-icon>
+  </div>
+</div>

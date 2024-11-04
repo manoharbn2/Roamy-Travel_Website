@@ -1,0 +1,59 @@
+<div *ngIf="city">
+  <h2>{{ isEditMode ? 'Edit City Details' : 'Add New City' }}</h2>
+
+  
+  <label for="description">Description</label>
+  <input 
+    type="text" 
+    id="description" 
+    [(ngModel)]="city.description" 
+    class="form-control" 
+    required 
+  />
+
+ 
+  <label for="places">Places to See</label>
+  <textarea 
+    id="places" 
+    [(ngModel)]="city.placesToSee" 
+    class="form-control">
+  </textarea>
+
+
+  <label for="rating">Rating</label>
+  <input 
+    type="number" 
+    id="rating" 
+    [(ngModel)]="city.rating" 
+    class="form-control" 
+    min="1" 
+    max="5" 
+    required 
+  />
+
+
+  <label for="category">Category</label>
+  <input 
+    type="text" 
+    id="category" 
+    [(ngModel)]="city.category" 
+    class="form-control" 
+  />
+
+ 
+  <label for="price">Price</label>
+  <input 
+    type="number" 
+    id="price" 
+    [(ngModel)]="city.price" 
+    class="form-control" 
+    min="0" 
+  />
+
+
+  <button 
+    (click)="onSave()" 
+    class="btn btn-primary mt-3">
+    {{ isEditMode ? 'Save Changes' : 'Add City' }}
+  </button>
+</div>

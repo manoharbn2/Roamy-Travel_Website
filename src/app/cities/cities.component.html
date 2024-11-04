@@ -1,0 +1,79 @@
+<div class="container mt-5">
+  <h1 class="text-center">Travel Destinations</h1>
+
+  
+  <button 
+    class="btn btn-success mb-3"
+    (click)="navigateToAddCity()">
+    Add New City
+  </button>
+
+  <input
+    type="text"
+    placeholder="Search by city name"
+    [(ngModel)]="searchTerm"
+    (input)="onSearchChange()"
+    class="form-control"
+  />
+
+  <select class="form-select mt-3" (change)="updateFilter($event)">
+    <option value="All">All</option>
+    <option value="Cultural">Cultural</option>
+    <option value="Heritage">Heritage</option>
+    <option value="Adventure">Adventure</option>
+    <option value="Family">Family</option>
+  </select>
+
+  <p>{{title}}</p>
+
+  <div class="row mt-4">
+    <div class="col-md-4" *ngFor="let city of filteredCities; let i = index">
+      <div class="card mb-4">
+        <img
+          [src]="city.image"
+          class="card-img-top"
+          [alt]="city.description"
+          *ngIf="showImage[i]"
+        />
+        <div class="card-body">
+          <p><strong>City ID:</strong> {{ city.id }}</p>
+          <h5 class="card-title">
+            <span (click)="goToCities(city.id)" style="cursor: pointer; color: blue; text-decoration: underline;">
+              {{ city.description }}
+            </span>
+          </h5>
+
+          <p class="card-text">
+            <strong>Rating:</strong> {{ city.rating }}
+          </p>
+
+          <app-city-rating
+            [rating]="city.rating"
+            [placeName]="city.description"
+            (ratingClicked)="onRatingClicked($event)">
+          </app-city-rating>
+
+          <p class="card-text" *ngIf="city.price">
+            <strong>Price:</strong> {{ city.price | currencyRupee }}
+          </p>
+
+          <ul>
+            <li *ngFor="let place of city.placesToSee">{{ place }}</li>
+          </ul>
+
+          <button class="btn btn-primary" (click)="toggleImage(i)">
+            {{ showImage[i] ? 'Hide Image' : 'Show Image' }}
+          </button>
+          
+          <button class="btn btn-warning mt-2" (click)="editCity(city.id)">
+            Edit
+          </button>
+
+          <button class="btn btn-danger mt-2" (click)="deleteCity(city.id)">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.crop
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+div{
+  cursor:pointer;
+}
+
+.green-star {
+  color: green;
+}
+.orange-star {
+  color: orange;
+}
+.red-star {
+  color: rgb(193, 28, 28);
+}
+.white-star {
+  color: rgb(103, 88, 88); 
+}
+
+.stars {
+  
+  gap: 4px;
+  cursor: pointer;
+}
+

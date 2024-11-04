@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "description": "Amsterdam, Netherlands",
+        "placesToSee": ["Rijksmuseum", "Van Gogh Museum", "Anne Frank House"],
+        "rating": 5,
+        "image": "assets/amsterdam.jpg",
+        "category": "Cultural",
+        "price": 5000
+    },
+    {
+        "id": 2,
+        "description": "Cape Town, South Africa",
+        "placesToSee": ["Table Mountain", "Robben Island", "V&A Waterfront"],
+        "rating": 4,
+        "image": "assets/capetown.jpg",
+        "category": "Adventure",
+        "price": 6000
+    },
+    {
+        "id": 3,
+        "description": "Kyoto, Japan",
+        "placesToSee": ["Fushimi Inari Shrine", "Kinkaku-ji", "Arashiyama Bamboo Grove"],
+        "rating": 3,
+        "image": "assets/iceland.jpg",
+        "category": "Cultural",
+        "price": 7000
+    },
+    {
+        "id": 4,
+        "description": "Queenstown, New Zealand",
+        "placesToSee": ["Milford Sound", "Skyline Queenstown", "Lake Wakatipu"],
+        "rating": 2,
+        "image": "assets/italy.jpg",
+        "category": "Adventure",
+        "price": 8000
+    },
+    {
+        "id": 5,
+        "description": "Florence, Italy",
+        "placesToSee": ["Uffizi Gallery", "Florence Cathedral", "Piazzale Michelangelo"],
+        "rating": 1,
+        "image": "assets/japan.jpg",
+        "category": "Cultural",
+        "price": 9000
+    },
+    {
+        "id": 6,
+        "description": "Seoul, South Korea",
+        "placesToSee": ["Gyeongbokgung Palace", "N Seoul Tower", "Bukchon Hanok Village"],
+        "rating": 5,
+        "image": "assets/mexico.jpg",
+        "category": "Cultural",
+        "price": 10000
+    },
+    {
+        "id": 7,
+        "description": "Mexico City, Mexico",
+        "placesToSee": ["Chapultepec Castle", "Frida Kahlo Museum", "Zócalo"],
+        "rating": 4,
+        "image": "assets/newzealand.jpg",
+        "category": "Heritage",
+        "price": 11000
+    },
+    {
+        "id": 8,
+        "description": "Reykjavik, Iceland",
+        "placesToSee": ["Blue Lagoon", "Golden Circle", "Hallgrímskirkja"],
+        "rating": 3,
+        "image": "assets/peru.jpg",
+        "category": "Adventure",
+        "price": 12000
+    },
+    {
+        "id": 9,
+        "description": "Petra, Jordan",
+        "placesToSee": ["The Treasury", "Monastery", "High Place of Sacrifice"],
+        "rating": 2,
+        "image": "assets/petra.jpg",
+        "category": "Heritage",
+        "price": 13000
+    },
+    {
+        "id": 10,
+        "description": "Cusco, Peru",
+        "placesToSee": ["Machu Picchu", "Sacsayhuaman", "Plaza de Armas"],
+        "rating": 1,
+        "image": "assets/southkorea.jpg",
+        "category": "Adventure",
+        "price": 5000
+    }
+]

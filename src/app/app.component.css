@@ -1,0 +1,178 @@
+.content-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6bdf2c; 
+  padding: 1px 1px;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(210, 43, 5, 0.282);  
+}
+.app-logo {
+  height: 80px;
+}
+
+
+.content-item {
+  color: white;
+  font-size: 14px;  
+  padding: 0;  
+  margin: 0 5px;  
+}
+.content-item:hover {
+  background-color: #007bff;  
+  color: white;  
+  cursor: pointer;
+}
+
+
+.active-item {
+  background-color: #0056b3;  
+  color: white;
+  border-radius: 5px;
+}
+
+
+.carousel {
+  position: relative;
+  margin-top: 60px; 
+  margin-bottom: 30px; 
+  width: 70%; 
+  height: 25vh; 
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1; 
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.search-bar {
+  position: relative; 
+  margin: 0 auto; 
+  margin-top: 20px; 
+  z-index: 1; 
+  width: 70%; 
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+.cities-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+app-cities {
+  width: 100%;
+}
+
+
+.city-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 15px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.city-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a6e3f6;  
+  padding-top: 60px; 
+}
+
+html, body {
+  height: 100%;  
+}
+
+
+.navbar {
+  background-color: #333; 
+  padding: 15px 30px; 
+  position: relative; 
+  width: 100%; 
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.navbar-brand {
+  color: #ff9800; 
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+
+.navbar-brand:hover {
+  color: #ffd54f; 
+}
+
+
+.nav-link {
+  color: white;
+  font-size: 16px; 
+  margin: 0 10px; 
+  text-transform: uppercase; 
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 15px; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #007bff; 
+  color: white;
+  cursor: pointer;
+}
+
+.nav-item.active .nav-link {
+  background-color: #0056b3; 
+  color: white;
+  border-radius: 5px;
+}
+
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white; 
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+  .nav-link {
+    margin: 10px 0;
+  }
+}
